@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace blogapi.ViewModel
+namespace blogapi.ViewModel.Categories
 {
     public class EditorCreateCategoryViewModel
     {

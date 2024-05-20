@@ -33,8 +33,6 @@ namespace blogapi.Service
                smtpClient. DeliveryMethod = SmtpDeliveryMethod.Network;
                smtpClient. EnableSsl = true;
             
-
-
             var mail = new MailMessage()
             {
                 From = new MailAddress(fromEmail, fromName),

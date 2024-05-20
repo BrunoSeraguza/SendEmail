@@ -13,6 +13,11 @@ using Microsoft.EntityFrameworkCore;
 using SecureIdentity.Password;
 
 using blogapi.Service;
+using blogapi.ViewModel.Accounts;
+using BlogApi.ViewModel.Accounts;
+using SendEmail.ViewModel;
+using System.Text.RegularExpressions;
+using System.Drawing;
 
 namespace blogapi.Controller
 {
@@ -52,18 +57,20 @@ namespace blogapi.Controller
                try{
                  await context.Users.AddAsync(user);
                  await context.SaveChangesAsync();
-                 emailService.SendEmail(user.Name,
+
+                 emailService.SendEmail(
+                  user.Name,
                   user.Email,
-                   "Email enviado com sucesso! e o é victor gay",
+                   "Email enviado com sucesso!",
                    $"Sua senha é <strong>{passowrd}</strong>"
                    );
 
                  return Ok(new ResultViewModel<dynamic>(new {
                     user = user.Email, passowrd
                  }));
-               } catch(Exception ex)
-               {
-          
+               }
+                catch(Exception ex)
+               {        
                 return StatusCode(500, new ResultViewModel<string>(ex.Message));
                }
                catch
@@ -75,7 +82,9 @@ namespace blogapi.Controller
         }
 
         [HttpPost("v1/accounts/login")]
-        public async Task<IActionResult> Login([FromBody] LoginViewModel model, [FromServices] BlogDataContext context,[FromServices]TokenService token )
+        public async Task<IActionResult> Login([FromBody] LoginViewModel model, 
+        [FromServices] BlogDataContext context,
+        [FromServices]TokenService token )
         {
             if(!ModelState.IsValid)
                 return BadRequest(new ResultViewModel<string>(ModelState.GetErrors()));
@@ -84,21 +93,60 @@ namespace blogapi.Controller
            .FirstOrDefaultAsync(x => x.Email == model.Email);
 
             if(user == null)
-                return StatusCode(401, new ResultViewModel<string>("Usuario ou senha invalidos"));
+                return StatusCode(401, new ResultViewModel<string>("Usuario nao encontrado"));
 
               if(!PasswordHasher.Verify(user.PasswordHash , model.Password) )  
                 return StatusCode(401, new ResultViewModel<string>("Usuario ou senha incorretos "));
-
-        try
-        {
+          try
+          {
           var hashToken = token.GenerateToken(user);
           return Ok(new ResultViewModel<string>(hashToken,null));
 
-        }
-        catch(Exception ex)
-        {
+          }
+          catch(Exception ex)
+          {
             return StatusCode(500 , new ResultViewModel<string>($"Erro interno do sistema {ex.Message}"));
+          }
         }
+        [HttpPost("v1/accounts/UploadImage")]
+        public async Task<IActionResult> UploadImage(
+          [FromBody] UploadImageViewModel model,
+          [FromServices] BlogDataContext context
+        ) 
+        {
+          var fileName = $"{Guid.NewGuid().ToString()}.jpg";
+          var data = new Regex(@"data:image\/[a-z]+;base64,").Replace(model.Base64Image,"");
+          var bytes = Convert.FromBase64String(data);
+
+            try
+            {
+                await System.IO.File.WriteAllBytesAsync($"wwwroot/Images/{fileName}", bytes);
+            }
+            catch
+            {
+               return StatusCode(500, new ResultViewModel<string>("Falha interna no sistema"));
+            }
+
+          var user = await context.Users.FirstOrDefaultAsync(x => x.Email == User.Identity.Name);
+                 
+         if(user == null)
+         {
+          return NotFound(new ResultViewModel<Category>("Usuario nao encontrado"));
+         }
+
+         user.Image = Configuration.ImageBase64 + fileName;
+
+            try
+            {
+                  context.Users.Update(user);
+                  await context.SaveChangesAsync();
+            }
+            catch(Exception ex) 
+            {
+                  return StatusCode(500, new ResultViewModel<string>("Falha interna no sistema"));
+            }
+
+         return Ok(new ResultViewModel<string>("Imagem alterada com sucesso!!!",null));        
         }
 
         [Authorize(Roles ="user")]

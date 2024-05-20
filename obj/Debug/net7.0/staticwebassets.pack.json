@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\10f643f8-8cc5-44c9-a84b-c6eefb8ab218.jpg",
+      "PackagePath": "staticwebassets\\Images\\10f643f8-8cc5-44c9-a84b-c6eefb8ab218.jpg"
+    },
+    {
+      "Id": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\140a8efc-51ab-4e3e-af31-22ad64ac96cf.jpg",
+      "PackagePath": "staticwebassets\\Images\\140a8efc-51ab-4e3e-af31-22ad64ac96cf.jpg"
+    },
+    {
+      "Id": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\3693711e-bc88-4ec7-98d6-1a172fb7ecd6.jpg",
+      "PackagePath": "staticwebassets\\Images\\3693711e-bc88-4ec7-98d6-1a172fb7ecd6.jpg"
+    },
+    {
+      "Id": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\42f10cde-6eb7-4757-9717-d35ea738cc80.jpg",
+      "PackagePath": "staticwebassets\\Images\\42f10cde-6eb7-4757-9717-d35ea738cc80.jpg"
+    },
+    {
+      "Id": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\4ebc6a88-284c-4e80-9ddf-2fcff26c838c.jpg",
+      "PackagePath": "staticwebassets\\Images\\4ebc6a88-284c-4e80-9ddf-2fcff26c838c.jpg"
+    },
+    {
+      "Id": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\5027d4a2-04cb-4d94-bf10-c926e4a29572.jpg",
+      "PackagePath": "staticwebassets\\Images\\5027d4a2-04cb-4d94-bf10-c926e4a29572.jpg"
+    },
+    {
+      "Id": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\9490ca67-7715-4052-a4be-91085d89f474.jpg",
+      "PackagePath": "staticwebassets\\Images\\9490ca67-7715-4052-a4be-91085d89f474.jpg"
+    },
+    {
+      "Id": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\b6b8d2c3-e152-47cc-a6d4-84b498bf5292.jpg",
+      "PackagePath": "staticwebassets\\Images\\b6b8d2c3-e152-47cc-a6d4-84b498bf5292.jpg"
+    },
+    {
+      "Id": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\c5df02dd-1ea4-4c30-a018-2e1534b9f7c3.jpg",
+      "PackagePath": "staticwebassets\\Images\\c5df02dd-1ea4-4c30-a018-2e1534b9f7c3.jpg"
+    },
+    {
+      "Id": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\f6feda11-a7ca-41f7-8dbb-10a870240387.jpg",
+      "PackagePath": "staticwebassets\\Images\\f6feda11-a7ca-41f7-8dbb-10a870240387.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BlogApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.BlogApi.props",
+      "PackagePath": "build\\BlogApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.BlogApi.props",
+      "PackagePath": "buildMultiTargeting\\BlogApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.BlogApi.props",
+      "PackagePath": "buildTransitive\\BlogApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -13,6 +13,7 @@ namespace blogapi.Controller
         public static string ApiKeyName { get; set;} = "api_key";
         public static string ApiKey { get; set;} = "bruno_api_IHdji/KGTsfi/uNmg==";
         public static SmtpConfiguration Smtp = new();
+        public static string ImageBase64 { get; set; } = "https://localhost:0000/Images/";
 
         public class SmtpConfiguration
         {

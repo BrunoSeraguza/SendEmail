@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-namespace blogapi.ViewModel
+namespace blogapi.ViewModel.Accounts
 {
     public class AccountViewModel
     {

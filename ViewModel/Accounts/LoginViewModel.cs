@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BlogApi.ViewModel
+namespace BlogApi.ViewModel.Accounts
 {
     public class LoginViewModel
     {

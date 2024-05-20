@@ -17,22 +17,24 @@ namespace blogapi.Service
     {
         public string GenerateToken(User user)
         {
-            var tokenHandler = new JwtSecurityTokenHandler();
-          
+            var tokenHandler = new JwtSecurityTokenHandler();        
             var key =  Encoding.ASCII.GetBytes(Configuration.JwtToken);
-            //var claim = user.GetClaims();
-            var tokenDescriptor = new SecurityTokenDescriptor
-       
+            //var claims = user.GetClaims();
+            var tokenDescriptor = new SecurityTokenDescriptor      
             {
                 Expires = DateTime.UtcNow.AddHours(3),
-                Subject = new ClaimsIdentity(new Claim[]
+                //Subject = new ClaimsIdentity(claims),
+                //moquei as claims, no caso usa o getClaims para pegar as claims e dps passa para a instancia do ClaimsIdentity e gg
+
+                Subject = new ClaimsIdentity(
+                new Claim[]
                 {
                     new Claim("Fruta","banana"),
                     new Claim(ClaimTypes.Role, "admin"),//User.IsInrole
                     new Claim(ClaimTypes.Role, "user"),
-                    new Claim(ClaimTypes.Name, "Bruno Seraguza") //User.Identity.Name
+                    new Claim(ClaimTypes.Name, "shzdevops@gmail.com") //User.Identity.Name
 
-                }),//new ClaimsIdentity(claims),
+                }),
                 SigningCredentials = new SigningCredentials
                 (
                     new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256
