@@ -2,7 +2,8 @@
 
 ## Visão Geral
 
-SendEmail é uma API desenvolvida para gerenciar autenticação de usuários, envio de emails via SendGrid e upload de imagens para um banco de dados. Facilita login seguro, autenticação, envio de emails e upload de imagens.
+SendEmail é uma API desenvolvida utilizando modelos e estrutura criados em meus outros projetos, considere uma versão ''melhorada'' do CRUD-EF.
+Essa aplicação tem a finalizade de gerenciar autenticação de usuários, envio de emails via SendGrid e upload de imagens para um banco de dados. Facilita login seguro, autenticação, envio de emails e upload de imagens.
 
 ## Funcionalidades
 
