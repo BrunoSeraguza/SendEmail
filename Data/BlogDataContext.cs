@@ -17,7 +17,7 @@ namespace Blog.Data
          //public DbSet<UserRole> UserRoles { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlServer("Data Source=DESKTOP-G18LE98;Database=Blog;Integrated Security=True;Encrypt=False;");
+            => options.UseSqlServer("Data Source=DESKTOP-G18LE98;Database=Blog-Performance;Integrated Security=True;Encrypt=False;");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

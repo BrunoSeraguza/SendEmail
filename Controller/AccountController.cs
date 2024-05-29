@@ -72,13 +72,7 @@ namespace blogapi.Controller
                 catch(Exception ex)
                {        
                 return StatusCode(500, new ResultViewModel<string>(ex.Message));
-               }
-               catch
-               {
-                return StatusCode(400,new ResultViewModel<string>("Erro interno no sistema"));
-               }
-    
-
+               }    
         }
 
         [HttpPost("v1/accounts/login")]

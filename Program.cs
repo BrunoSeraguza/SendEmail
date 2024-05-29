@@ -1,8 +1,10 @@
 using System.Text;
+using System.Text.Json.Serialization;
 using Blog.Data;
 using blogapi.Controller;
 using blogapi.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +16,7 @@ builder.Services.AddControllers();
 
 ConfigureAuthorization(builder);
 ConfigureService(builder);
+ConfigureMVC(builder);
 
 var app = builder.Build();
 LoadConfiguration(app);
@@ -54,9 +57,22 @@ void ConfigureAuthorization(WebApplicationBuilder builder)
         });
 }
 void ConfigureService(WebApplicationBuilder builder)
+
 {
     builder.Services.AddDbContext<BlogDataContext>();
     builder.Services.AddTransient<TokenService>();
     builder.Services.AddTransient<EmailService>();
     builder.Services.AddControllers();
+}
+
+void ConfigureMVC(WebApplicationBuilder builder)
+{
+    builder.Services.AddControllers()
+    .ConfigureApiBehaviorOptions(
+        options => {
+            options.SuppressModelStateInvalidFilter = true;
+            }).AddJsonOptions(x => {
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+                x.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingDefault;
+            });
 }
