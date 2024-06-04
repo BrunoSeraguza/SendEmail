@@ -18,11 +18,9 @@ namespace blogapi.Extensios
                 new (ClaimTypes.Name, user.Email)
             };
     
-
             result.AddRange(user.Roles.Select(role => new Claim(ClaimTypes.Role, role.Slug) ));
 
             return result;
-
         }
     }
 }

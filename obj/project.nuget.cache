@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OX14gvAHVA3FpHFLubF/Xk6j0YUvbybs4RX6gNFdP0ZcqsJLUZxmwlE4yUC2MqaxdKHpIykrRbhObIYDvPMw5w==",
+  "dgSpecHash": "YDfndy166/HoWadURWPPURvwVsCc8nlsGY4Z8Mpw89c0sD9OZBZ4KUlMAzOZXIv3nic0HY7eXn3YsKObFxepSw==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\SendEmail\\BlogApi.csproj",
+  "projectFilePath": "d:\\Projetos\\SendEmail\\BlogApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -96,7 +96,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "BlogApi depends on Microsoft.AspNetCore.Authentication.JwtBearer (>= 5.0.18) but Microsoft.AspNetCore.Authentication.JwtBearer 5.0.18 was not found. An approximate best match of Microsoft.AspNetCore.Authentication.JwtBearer 6.0.0 was resolved.",
+      "message": "BlogApi depende de Microsoft.AspNetCore.Authentication.JwtBearer (>= 5.0.18), mas Microsoft.AspNetCore.Authentication.JwtBearer 5.0.18 não foi encontrado. A melhor correspondência aproximada de Microsoft.AspNetCore.Authentication.JwtBearer 6.0.0 foi resolvida.",
       "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
       "targetGraphs": [
         "net7.0"
