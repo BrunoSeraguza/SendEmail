@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Projetos\\SendEmail\\BlogApi.csproj": {}
+    "D:\\Projetos\\SendEmail\\BlogApi.csproj": {}
   },
   "projects": {
-    "d:\\Projetos\\SendEmail\\BlogApi.csproj": {
+    "D:\\Projetos\\SendEmail\\BlogApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Projetos\\SendEmail\\BlogApi.csproj",
+        "projectUniqueName": "D:\\Projetos\\SendEmail\\BlogApi.csproj",
         "projectName": "BlogApi",
-        "projectPath": "d:\\Projetos\\SendEmail\\BlogApi.csproj",
+        "projectPath": "D:\\Projetos\\SendEmail\\BlogApi.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "d:\\Projetos\\SendEmail\\obj\\",
+        "outputPath": "D:\\Projetos\\SendEmail\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,6 +70,10 @@
             "SendGrid": {
               "target": "Package",
               "version": "[9.29.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
             }
           },
           "imports": [

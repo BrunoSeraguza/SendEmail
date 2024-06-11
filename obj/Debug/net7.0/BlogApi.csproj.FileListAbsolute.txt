@@ -219,3 +219,8 @@ d:\Projetos\SendEmail\obj\Debug\net7.0\BlogApi.pdb
 d:\Projetos\SendEmail\obj\Debug\net7.0\BlogApi.genruntimeconfig.cache
 d:\Projetos\SendEmail\obj\Debug\net7.0\ref\BlogApi.dll
 d:\Projetos\SendEmail\bin\Debug\net7.0\BlogApi.staticwebassets.runtime.json
+D:\Projetos\SendEmail\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\Projetos\SendEmail\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projetos\SendEmail\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projetos\SendEmail\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Projetos\SendEmail\obj\Debug\net7.0\BlogApi.MvcApplicationPartsAssemblyInfo.cs

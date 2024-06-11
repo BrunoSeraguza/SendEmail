@@ -6,6 +6,7 @@ using blogapi.Controller;
 using blogapi.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 
@@ -15,6 +16,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<BlogDataContext>();
 builder.Services.AddTransient<TokenService>();
 builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 ConfigureAuthorization(builder);
 ConfigureService(builder);
@@ -22,11 +25,20 @@ ConfigureMVC(builder);
 
 var app = builder.Build();
 LoadConfiguration(app);
+//para forcar um https
+app.UseHttpsRedirection();
 app.UseResponseCompression();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+if(app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.Run();
+
 
 
 void LoadConfiguration(WebApplication app)
@@ -54,14 +66,14 @@ void ConfigureAuthorization(WebApplicationBuilder builder)
                 IssuerSigningKey = new SymmetricSecurityKey(key),
                 ValidateIssuer = false,
                 ValidateAudience = false
-            };
-
-    
+            };    
         });
 }
 void ConfigureService(WebApplicationBuilder builder)
 
 {
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
     builder.Services.AddMemoryCache();
     builder.Services.AddResponseCompression(options => {
         options.Providers.Add<GzipCompressionProvider>();
@@ -69,7 +81,7 @@ void ConfigureService(WebApplicationBuilder builder)
     builder.Services.Configure<GzipCompressionProviderOptions>(options => {
         options.Level = CompressionLevel.Optimal;
     });
-    builder.Services.AddDbContext<BlogDataContext>();
+    builder.Services.AddDbContext<BlogDataContext>(options => options.UseSqlServer(connectionString));
     builder.Services.AddTransient<TokenService>();
     builder.Services.AddTransient<EmailService>();
     builder.Services.AddControllers();

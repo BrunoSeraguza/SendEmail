@@ -6,6 +6,11 @@ namespace Blog.Data
 {
     public class BlogDataContext : DbContext
     {
+    public BlogDataContext(DbContextOptions<BlogDataContext> options) : base(options)
+    {
+    
+    }
+
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<Role> Roles { get; set; }
@@ -16,8 +21,8 @@ namespace Blog.Data
         public DbSet<User> Users { get; set; }
          //public DbSet<UserRole> UserRoles { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlServer("Data Source=DESKTOP-G18LE98;Database=Blog-Performance;Integrated Security=True;Encrypt=False;");
+        // protected override void OnConfiguring(DbContextOptionsBuilder options)
+        //     => options.UseSqlServer("Data Source=DESKTOP-G18LE98;Database=Blog-Performance;Integrated Security=True;Encrypt=False;");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

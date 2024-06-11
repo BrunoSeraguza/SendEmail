@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nahAenJh8FbBx9VKcIERoRboPvBV0t+SgFGWnP0fmro=",
+  "Hash": "aMvAdzOgP+NXvsZGNsJmpfS9r9A1x8qw2PaL/QrpYYY=",
   "Source": "BlogApi",
   "BasePath": "_content/BlogApi",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BlogApi\\wwwroot",
       "Source": "BlogApi",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\10f643f8-8cc5-44c9-a84b-c6eefb8ab218.jpg",
+      "Identity": "D:\\Projetos\\SendEmail\\wwwroot\\Images\\10f643f8-8cc5-44c9-a84b-c6eefb8ab218.jpg",
       "SourceId": "BlogApi",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "RelativePath": "Images/10f643f8-8cc5-44c9-a84b-c6eefb8ab218.jpg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\10f643f8-8cc5-44c9-a84b-c6eefb8ab218.jpg"
     },
     {
-      "Identity": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\140a8efc-51ab-4e3e-af31-22ad64ac96cf.jpg",
+      "Identity": "D:\\Projetos\\SendEmail\\wwwroot\\Images\\140a8efc-51ab-4e3e-af31-22ad64ac96cf.jpg",
       "SourceId": "BlogApi",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "RelativePath": "Images/140a8efc-51ab-4e3e-af31-22ad64ac96cf.jpg",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\140a8efc-51ab-4e3e-af31-22ad64ac96cf.jpg"
     },
     {
-      "Identity": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\3693711e-bc88-4ec7-98d6-1a172fb7ecd6.jpg",
+      "Identity": "D:\\Projetos\\SendEmail\\wwwroot\\Images\\3693711e-bc88-4ec7-98d6-1a172fb7ecd6.jpg",
       "SourceId": "BlogApi",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "RelativePath": "Images/3693711e-bc88-4ec7-98d6-1a172fb7ecd6.jpg",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\3693711e-bc88-4ec7-98d6-1a172fb7ecd6.jpg"
     },
     {
-      "Identity": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\42f10cde-6eb7-4757-9717-d35ea738cc80.jpg",
+      "Identity": "D:\\Projetos\\SendEmail\\wwwroot\\Images\\42f10cde-6eb7-4757-9717-d35ea738cc80.jpg",
       "SourceId": "BlogApi",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "RelativePath": "Images/42f10cde-6eb7-4757-9717-d35ea738cc80.jpg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\42f10cde-6eb7-4757-9717-d35ea738cc80.jpg"
     },
     {
-      "Identity": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\4ebc6a88-284c-4e80-9ddf-2fcff26c838c.jpg",
+      "Identity": "D:\\Projetos\\SendEmail\\wwwroot\\Images\\4ebc6a88-284c-4e80-9ddf-2fcff26c838c.jpg",
       "SourceId": "BlogApi",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "RelativePath": "Images/4ebc6a88-284c-4e80-9ddf-2fcff26c838c.jpg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\4ebc6a88-284c-4e80-9ddf-2fcff26c838c.jpg"
     },
     {
-      "Identity": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\5027d4a2-04cb-4d94-bf10-c926e4a29572.jpg",
+      "Identity": "D:\\Projetos\\SendEmail\\wwwroot\\Images\\5027d4a2-04cb-4d94-bf10-c926e4a29572.jpg",
       "SourceId": "BlogApi",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "RelativePath": "Images/5027d4a2-04cb-4d94-bf10-c926e4a29572.jpg",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\5027d4a2-04cb-4d94-bf10-c926e4a29572.jpg"
     },
     {
-      "Identity": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\7da48ad5-cbc5-4376-abc5-d0ecd05858f6.jpg",
+      "Identity": "D:\\Projetos\\SendEmail\\wwwroot\\Images\\7da48ad5-cbc5-4376-abc5-d0ecd05858f6.jpg",
       "SourceId": "BlogApi",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "RelativePath": "Images/7da48ad5-cbc5-4376-abc5-d0ecd05858f6.jpg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\7da48ad5-cbc5-4376-abc5-d0ecd05858f6.jpg"
     },
     {
-      "Identity": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\9490ca67-7715-4052-a4be-91085d89f474.jpg",
+      "Identity": "D:\\Projetos\\SendEmail\\wwwroot\\Images\\9490ca67-7715-4052-a4be-91085d89f474.jpg",
       "SourceId": "BlogApi",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "RelativePath": "Images/9490ca67-7715-4052-a4be-91085d89f474.jpg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\9490ca67-7715-4052-a4be-91085d89f474.jpg"
     },
     {
-      "Identity": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\b6b8d2c3-e152-47cc-a6d4-84b498bf5292.jpg",
+      "Identity": "D:\\Projetos\\SendEmail\\wwwroot\\Images\\b6b8d2c3-e152-47cc-a6d4-84b498bf5292.jpg",
       "SourceId": "BlogApi",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "RelativePath": "Images/b6b8d2c3-e152-47cc-a6d4-84b498bf5292.jpg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\b6b8d2c3-e152-47cc-a6d4-84b498bf5292.jpg"
     },
     {
-      "Identity": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\c5df02dd-1ea4-4c30-a018-2e1534b9f7c3.jpg",
+      "Identity": "D:\\Projetos\\SendEmail\\wwwroot\\Images\\c5df02dd-1ea4-4c30-a018-2e1534b9f7c3.jpg",
       "SourceId": "BlogApi",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "RelativePath": "Images/c5df02dd-1ea4-4c30-a018-2e1534b9f7c3.jpg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\c5df02dd-1ea4-4c30-a018-2e1534b9f7c3.jpg"
     },
     {
-      "Identity": "d:\\Projetos\\SendEmail\\wwwroot\\Images\\f6feda11-a7ca-41f7-8dbb-10a870240387.jpg",
+      "Identity": "D:\\Projetos\\SendEmail\\wwwroot\\Images\\f6feda11-a7ca-41f7-8dbb-10a870240387.jpg",
       "SourceId": "BlogApi",
       "SourceType": "Discovered",
-      "ContentRoot": "d:\\Projetos\\SendEmail\\wwwroot\\",
+      "ContentRoot": "D:\\Projetos\\SendEmail\\wwwroot\\",
       "BasePath": "_content/BlogApi",
       "RelativePath": "Images/f6feda11-a7ca-41f7-8dbb-10a870240387.jpg",
       "AssetKind": "All",
