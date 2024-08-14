@@ -56,6 +56,4 @@ bash dotnet run
 - `/v1/accounts`: Envio de email.
 - `/v1/accounts/UploadImage`: Upload de imagem.
 
-## Contribuição
 
-Contribuições são bem-vindas Faça um fork do repositório e envie um pull reque
